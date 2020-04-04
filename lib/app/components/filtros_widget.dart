@@ -18,7 +18,7 @@ class FiltrosWidget extends StatelessWidget {
               ),
             ),
             child: Icon(
-              Icons.filter_list,
+              Icons.tune,
               color: Colors.white,
             ),
           ),

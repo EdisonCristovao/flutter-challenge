@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class FilterItemWidget extends StatelessWidget {
-  String text = '';
+  final String text;
 
   FilterItemWidget({this.text});
 
@@ -16,9 +17,11 @@ class FilterItemWidget extends StatelessWidget {
         ),
       ),
       child: FlatButton(
-        onPressed: () {},
+        onPressed: () {
+          Modular.to.pushNamed('/details');
+        },
         child: Text(
-          '$text',
+          '${text}',
           style: TextStyle(
             color: Colors.green,
           ),

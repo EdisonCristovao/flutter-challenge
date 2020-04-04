@@ -3,19 +3,22 @@ import 'package:flutter/material.dart';
 class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          Icon(
-            Icons.short_text,
-            size: 50.0,
-          ),
-          Icon(
-            Icons.shopping_cart,
-            size: 50.0,
-          ),
-        ],
+    return Padding(
+      padding: EdgeInsets.fromLTRB(15, 40, 15, 0),
+      child: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Icon(
+              Icons.short_text,
+              size: 40.0,
+            ),
+            Icon(
+              Icons.shopping_basket,
+              size: 40.0,
+            ),
+          ],
+        ),
       ),
     );
   }
